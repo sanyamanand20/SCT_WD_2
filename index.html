@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Stopwatch - Skillcraft Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <h1>STOPWATCH</h1>
+        <div class="time-display" id="display">00:00:00.<span class="ms">00</span></div>
+        
+        <div class="controls">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="pauseBtn" onclick="pause()" disabled>Pause</button>
+            <button id="lapBtn" onclick="lap()" disabled>Lap</button>
+            <button id="resetBtn" onclick="reset()">Reset</button>
+        </div>
+
+        <ul class="laps-list" id="laps"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
